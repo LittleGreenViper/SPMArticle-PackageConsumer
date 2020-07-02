@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4AA0A8224A81AE8008122E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA0A8124A81AE8008122E3 /* main.swift */; };
+		D49AC57624AE94D900DE0843 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* main.swift */; };
+		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +24,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D4AA0A8124A81AE8008122E3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = src/main.swift; sourceTree = SOURCE_ROOT; };
+		D49AC57524AE94D900DE0843 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackageConsumerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageConsumerTests.swift; sourceTree = "<group>"; };
+		D49AC57F24AE978400DE0843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4AC1F1024A8151800C340F9 /* PackageConsumer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PackageConsumer; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D49AC57824AE978400DE0843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4AC1F0D24A8151800C340F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +49,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D49AC57324AE94D900DE0843 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC57424AE94D900DE0843 /* PackageConsumer */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D49AC57424AE94D900DE0843 /* PackageConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC57524AE94D900DE0843 /* main.swift */,
+			);
+			path = PackageConsumer;
+			sourceTree = "<group>";
+		};
+		D49AC57C24AE978400DE0843 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC58324AE979D00DE0843 /* PackageConsumerTests */,
+				D49AC57F24AE978400DE0843 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D49AC58324AE979D00DE0843 /* PackageConsumerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */,
+			);
+			path = PackageConsumerTests;
+			sourceTree = "<group>";
+		};
 		D4AC1F0724A8151800C340F9 = {
 			isa = PBXGroup;
 			children = (
-				D4AA0A8124A81AE8008122E3 /* main.swift */,
+				D49AC57324AE94D900DE0843 /* Sources */,
+				D49AC57C24AE978400DE0843 /* Tests */,
 				D4AC1F1124A8151800C340F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D4AC1F1024A8151800C340F9 /* PackageConsumer */,
+				D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +103,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D49AC57A24AE978400DE0843 /* PackageConsumerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D49AC58024AE978400DE0843 /* Build configuration list for PBXNativeTarget "PackageConsumerTests" */;
+			buildPhases = (
+				D49AC57724AE978400DE0843 /* Sources */,
+				D49AC57824AE978400DE0843 /* Frameworks */,
+				D49AC57924AE978400DE0843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PackageConsumerTests;
+			productName = PackageConsumerTests;
+			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D4AC1F0F24A8151800C340F9 /* PackageConsumer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4AC1F1724A8151800C340F9 /* Build configuration list for PBXNativeTarget "PackageConsumer" */;
@@ -84,6 +147,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Little Green Viper Software Development LLC";
 				TargetAttributes = {
+					D49AC57A24AE978400DE0843 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					D4AC1F0F24A8151800C340F9 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -103,22 +169,77 @@
 			projectRoot = "";
 			targets = (
 				D4AC1F0F24A8151800C340F9 /* PackageConsumer */,
+				D49AC57A24AE978400DE0843 /* PackageConsumerTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D49AC57924AE978400DE0843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		D49AC57724AE978400DE0843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4AC1F0C24A8151800C340F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4AA0A8224A81AE8008122E3 /* main.swift in Sources */,
+				D49AC57624AE94D900DE0843 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D49AC58124AE978400DE0843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlegreenviper.PackageConsumerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D49AC58224AE978400DE0843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlegreenviper.PackageConsumerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D4AC1F1524A8151800C340F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -257,6 +378,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D49AC58024AE978400DE0843 /* Build configuration list for PBXNativeTarget "PackageConsumerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D49AC58124AE978400DE0843 /* Debug */,
+				D49AC58224AE978400DE0843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D4AC1F0B24A8151800C340F9 /* Build configuration list for PBXProject "PackageConsumer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
