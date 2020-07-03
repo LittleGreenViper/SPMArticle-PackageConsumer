@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D456778624AF8825003F132F /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D456778524AF8825003F132F /* Package-BPrime */; };
-		D47D1F9724AF89980068C269 /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D47D1F9624AF89980068C269 /* Package-BPrime */; };
 		D49AC57624AE94D900DE0843 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
 		D4C5D89824AF72C000164393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C5D89724AF72C000164393 /* main.swift */; };
+		D4E07CA124AF8B0E008B40AC /* Package-A in Frameworks */ = {isa = PBXBuildFile; productRef = D4E07CA024AF8B0E008B40AC /* Package-A */; };
+		D4E07CA324AF8B38008B40AC /* Package-A in Frameworks */ = {isa = PBXBuildFile; productRef = D4E07CA224AF8B38008B40AC /* Package-A */; };
 		D4FDB7A024AF5D2700395BE0 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D456778624AF8825003F132F /* Package-BPrime in Frameworks */,
+				D4E07CA124AF8B0E008B40AC /* Package-A in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47D1F9724AF89980068C269 /* Package-BPrime in Frameworks */,
+				D4E07CA324AF8B38008B40AC /* Package-A in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 			);
 			name = PackageConsumerTests;
 			packageProductDependencies = (
-				D47D1F9624AF89980068C269 /* Package-BPrime */,
+				D4E07CA224AF8B38008B40AC /* Package-A */,
 			);
 			productName = PackageConsumerTests;
 			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
@@ -166,7 +166,7 @@
 			);
 			name = PackageConsumer;
 			packageProductDependencies = (
-				D456778524AF8825003F132F /* Package-BPrime */,
+				D4E07CA024AF8B0E008B40AC /* Package-A */,
 			);
 			productName = PackageConsumer;
 			productReference = D4AC1F1024A8151800C340F9 /* PackageConsumer */;
@@ -200,7 +200,7 @@
 			);
 			mainGroup = D4AC1F0724A8151800C340F9;
 			packageReferences = (
-				D42269A424AF813C003B510C /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */,
+				D4E07C9F24AF8B0E008B40AC /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */,
 			);
 			productRefGroup = D4AC1F1124A8151800C340F9 /* Products */;
 			projectDirPath = "";
@@ -448,9 +448,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D42269A424AF813C003B510C /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */ = {
+		D4E07C9F24AF8B0E008B40AC /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_B.git";
+			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_A.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -459,15 +459,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D456778524AF8825003F132F /* Package-BPrime */ = {
+		D4E07CA024AF8B0E008B40AC /* Package-A */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D42269A424AF813C003B510C /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
-			productName = "Package-BPrime";
+			package = D4E07C9F24AF8B0E008B40AC /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */;
+			productName = "Package-A";
 		};
-		D47D1F9624AF89980068C269 /* Package-BPrime */ = {
+		D4E07CA224AF8B38008B40AC /* Package-A */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D42269A424AF813C003B510C /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
-			productName = "Package-BPrime";
+			package = D4E07C9F24AF8B0E008B40AC /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */;
+			productName = "Package-A";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
