@@ -20,7 +20,12 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 Little Green Viper Software Development LLC: https://littlegreenviper.com
 */
 
-import Foundation
+import XCTest
 
-print("Hello, World!")
-
+class PackageConsumerTests: XCTestCase {
+    func testQuickly() {
+        let comp = "PackageConsumer, Version 1.0.0\n\tPackage_A, Version: 1.0.0"
+        let text = PackageConsumer().text
+        XCTAssertEqual(text, comp)
+    }
+}

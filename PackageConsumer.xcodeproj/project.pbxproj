@@ -3,14 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4AA0A8224A81AE8008122E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA0A8124A81AE8008122E3 /* main.swift */; };
+		D49AC57624AE94D900DE0843 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* main.swift */; };
+		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
+		D4FDB79F24AF5BD100395BE0 /* Package-A in Frameworks */ = {isa = PBXBuildFile; productRef = D4FDB79E24AF5BD100395BE0 /* Package-A */; };
+		D4FDB7A024AF5D2700395BE0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* main.swift */; };
+		D4FDB7A424AF5D9000395BE0 /* Package-A in Frameworks */ = {isa = PBXBuildFile; productRef = D4FDB7A324AF5D9000395BE0 /* Package-A */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D453E63F24AE98CB0036E9F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4AC1F0E24A8151800C340F9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,7 +37,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D4AA0A8124A81AE8008122E3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = src/main.swift; sourceTree = SOURCE_ROOT; };
+		D49AC57524AE94D900DE0843 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackageConsumerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageConsumerTests.swift; sourceTree = "<group>"; };
+		D49AC57F24AE978400DE0843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4AC1F1024A8151800C340F9 /* PackageConsumer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PackageConsumer; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,16 +49,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FDB79F24AF5BD100395BE0 /* Package-A in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4FDB7A124AF5D8B00395BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FDB7A424AF5D9000395BE0 /* Package-A in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D49AC57324AE94D900DE0843 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC57424AE94D900DE0843 /* PackageConsumer */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D49AC57424AE94D900DE0843 /* PackageConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC57524AE94D900DE0843 /* main.swift */,
+			);
+			path = PackageConsumer;
+			sourceTree = "<group>";
+		};
+		D49AC57C24AE978400DE0843 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC58324AE979D00DE0843 /* PackageConsumerTests */,
+				D49AC57F24AE978400DE0843 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D49AC58324AE979D00DE0843 /* PackageConsumerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */,
+			);
+			path = PackageConsumerTests;
+			sourceTree = "<group>";
+		};
 		D4AC1F0724A8151800C340F9 = {
 			isa = PBXGroup;
 			children = (
-				D4AA0A8124A81AE8008122E3 /* main.swift */,
+				D49AC57324AE94D900DE0843 /* Sources */,
+				D49AC57C24AE978400DE0843 /* Tests */,
 				D4AC1F1124A8151800C340F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D4AC1F1024A8151800C340F9 /* PackageConsumer */,
+				D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +118,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D49AC57A24AE978400DE0843 /* PackageConsumerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D49AC58024AE978400DE0843 /* Build configuration list for PBXNativeTarget "PackageConsumerTests" */;
+			buildPhases = (
+				D49AC57724AE978400DE0843 /* Sources */,
+				D4FDB7A124AF5D8B00395BE0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PackageConsumerTests;
+			packageProductDependencies = (
+				D4FDB7A324AF5D9000395BE0 /* Package-A */,
+			);
+			productName = PackageConsumerTests;
+			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D4AC1F0F24A8151800C340F9 /* PackageConsumer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4AC1F1724A8151800C340F9 /* Build configuration list for PBXNativeTarget "PackageConsumer" */;
@@ -64,12 +144,16 @@
 				D4AC1F0C24A8151800C340F9 /* Sources */,
 				D4AC1F0D24A8151800C340F9 /* Frameworks */,
 				D4AC1F0E24A8151800C340F9 /* CopyFiles */,
+				D453E63F24AE98CB0036E9F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PackageConsumer;
+			packageProductDependencies = (
+				D4FDB79E24AF5BD100395BE0 /* Package-A */,
+			);
 			productName = PackageConsumer;
 			productReference = D4AC1F1024A8151800C340F9 /* PackageConsumer */;
 			productType = "com.apple.product-type.tool";
@@ -84,6 +168,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Little Green Viper Software Development LLC";
 				TargetAttributes = {
+					D49AC57A24AE978400DE0843 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					D4AC1F0F24A8151800C340F9 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -98,27 +185,76 @@
 				Base,
 			);
 			mainGroup = D4AC1F0724A8151800C340F9;
+			packageReferences = (
+				D4FDB79D24AF5BD100395BE0 /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */,
+			);
 			productRefGroup = D4AC1F1124A8151800C340F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D4AC1F0F24A8151800C340F9 /* PackageConsumer */,
+				D49AC57A24AE978400DE0843 /* PackageConsumerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D49AC57724AE978400DE0843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FDB7A024AF5D2700395BE0 /* main.swift in Sources */,
+				D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4AC1F0C24A8151800C340F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4AA0A8224A81AE8008122E3 /* main.swift in Sources */,
+				D49AC57624AE94D900DE0843 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D49AC58124AE978400DE0843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlegreenviper.PackageConsumerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D49AC58224AE978400DE0843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlegreenviper.PackageConsumerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D4AC1F1524A8151800C340F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -238,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P53V4JS928;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlegreenviper.PackageConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -249,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P53V4JS928;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.littlegreenviper.PackageConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -257,6 +395,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D49AC58024AE978400DE0843 /* Build configuration list for PBXNativeTarget "PackageConsumerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D49AC58124AE978400DE0843 /* Debug */,
+				D49AC58224AE978400DE0843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D4AC1F0B24A8151800C340F9 /* Build configuration list for PBXProject "PackageConsumer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -276,6 +423,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4FDB79D24AF5BD100395BE0 /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_A.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4FDB79E24AF5BD100395BE0 /* Package-A */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4FDB79D24AF5BD100395BE0 /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */;
+			productName = "Package-A";
+		};
+		D4FDB7A324AF5D9000395BE0 /* Package-A */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4FDB79D24AF5BD100395BE0 /* XCRemoteSwiftPackageReference "SPMArticle-Package_A" */;
+			productName = "Package-A";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4AC1F0824A8151800C340F9 /* Project object */;
 }
