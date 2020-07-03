@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Package_C",
+        "repositoryURL": "git@github.com:LittleGreenViper/SMPArticle-Package_C.git",
+        "state": {
+          "branch": null,
+          "revision": "2a1f2053e2211969060bba87e826725304aea990",
+          "version": "2.0.0"
+        }
+      },
+      {
         "package": "Package_A",
         "repositoryURL": "git@github.com:LittleGreenViper/SPMArticle-Package_A.git",
         "state": {
@@ -11,12 +20,12 @@
         }
       },
       {
-        "package": "Package_BPrime",
-        "repositoryURL": "git@github.com:LittleGreenViper/SPMArticle-Package_B.git",
+        "package": "Package_D",
+        "repositoryURL": "git@github.com:LittleGreenViper/SPMArticle-Package_D.git",
         "state": {
           "branch": null,
-          "revision": "448bf468f3db96cdcc1183b208cfe38ee8abefd2",
-          "version": "2.0.0"
+          "revision": "d45bdbf1e7600e4df7f8158d01274319a5381cfc",
+          "version": "1.0.0"
         }
       }
     ]
