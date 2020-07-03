@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D407C7F924AFB27000EB2B28 /* Package-D in Frameworks */ = {isa = PBXBuildFile; productRef = D407C7F824AFB27000EB2B28 /* Package-D */; };
 		D407C7FA24AFB27000EB2B28 /* Package-D in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D407C7F824AFB27000EB2B28 /* Package-D */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D431F61024AFBCAE00AA921C /* Package-D in Frameworks */ = {isa = PBXBuildFile; productRef = D431F60F24AFBCAE00AA921C /* Package-D */; };
 		D49AC57624AE94D900DE0843 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
 		D4C5D89824AF72C000164393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C5D89724AF72C000164393 /* main.swift */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D431F61024AFBCAE00AA921C /* Package-D in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,7 @@
 			);
 			name = PackageConsumerTests;
 			packageProductDependencies = (
+				D431F60F24AFBCAE00AA921C /* Package-D */,
 			);
 			productName = PackageConsumerTests;
 			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
@@ -433,13 +436,18 @@
 			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_D.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		D407C7F824AFB27000EB2B28 /* Package-D */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D407C7F724AFB27000EB2B28 /* XCRemoteSwiftPackageReference "SPMArticle-Package_D" */;
+			productName = "Package-D";
+		};
+		D431F60F24AFBCAE00AA921C /* Package-D */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D407C7F724AFB27000EB2B28 /* XCRemoteSwiftPackageReference "SPMArticle-Package_D" */;
 			productName = "Package-D";
