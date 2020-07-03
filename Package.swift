@@ -32,19 +32,13 @@ let package = Package(
         .executable(name: "PackageConsumer", targets: ["PackageConsumer"])
     ],
     dependencies: [
-        .package(name: "Package_B", url: "git@github.com:LittleGreenViper/SPMArticle-Package_B.git", from: "1.0.0")
+        .package(name: "Package_BPrime", url: "git@github.com:LittleGreenViper/SPMArticle-Package_B.git", from: "1.0.0")
     ],
     targets: [
         .target(
             name: "PackageConsumer",
             dependencies: [
-                .product(name: "Package_B", package: "Package_B")
-            ]
-        ),
-        .testTarget(
-            name: "PackageConsumerTests",
-            dependencies: [
-                "PackageConsumer"
+                .product(name: "Package-BPrime", package: "Package_BPrime")
             ]
         )
     ]
