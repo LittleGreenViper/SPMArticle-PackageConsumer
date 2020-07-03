@@ -21,6 +21,11 @@ Little Green Viper Software Development LLC: https://littlegreenviper.com
 */
 
 import Foundation
+import Package_A
 
-let text = PackageConsumer().text
-print(text)
+struct PackageConsumer {
+    let text: String
+    init(text intext: String = "PackageConsumer, Version 1.0.0") {
+        text = intext + "\n" + Package_A(indent: 1).text
+    }
+}
