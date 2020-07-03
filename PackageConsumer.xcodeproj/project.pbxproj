@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D449838224AFA2B600303C4A /* Package-C in Frameworks */ = {isa = PBXBuildFile; productRef = D449838124AFA2B600303C4A /* Package-C */; };
-		D449838324AFA2B600303C4A /* Package-C in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D449838124AFA2B600303C4A /* Package-C */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D449838624AFA2D400303C4A /* Package-C in Frameworks */ = {isa = PBXBuildFile; productRef = D449838524AFA2D400303C4A /* Package-C */; };
-		D449838824AFA2D400303C4A /* Package-C in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D449838524AFA2D400303C4A /* Package-C */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D449838B24AFAA5D00303C4A /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D449838A24AFAA5D00303C4A /* Package-BPrime */; };
+		D449838D24AFAA7000303C4A /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D449838C24AFAA7000303C4A /* Package-BPrime */; };
 		D49AC57624AE94D900DE0843 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
 		D4C5D89824AF72C000164393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C5D89724AF72C000164393 /* main.swift */; };
@@ -24,18 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D449838324AFA2B600303C4A /* Package-C in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D449838724AFA2D400303C4A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D449838824AFA2D400303C4A /* Package-C in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D449838224AFA2B600303C4A /* Package-C in Frameworks */,
+				D449838B24AFAA5D00303C4A /* Package-BPrime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D449838624AFA2D400303C4A /* Package-C in Frameworks */,
+				D449838D24AFAA7000303C4A /* Package-BPrime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +128,6 @@
 			buildPhases = (
 				D49AC57724AE978400DE0843 /* Sources */,
 				D4FDB7A124AF5D8B00395BE0 /* Frameworks */,
-				D449838724AFA2D400303C4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,7 +135,7 @@
 			);
 			name = PackageConsumerTests;
 			packageProductDependencies = (
-				D449838524AFA2D400303C4A /* Package-C */,
+				D449838C24AFAA7000303C4A /* Package-BPrime */,
 			);
 			productName = PackageConsumerTests;
 			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
@@ -170,7 +155,7 @@
 			);
 			name = PackageConsumer;
 			packageProductDependencies = (
-				D449838124AFA2B600303C4A /* Package-C */,
+				D449838A24AFAA5D00303C4A /* Package-BPrime */,
 			);
 			productName = PackageConsumer;
 			productReference = D4AC1F1024A8151800C340F9 /* PackageConsumer */;
@@ -204,7 +189,7 @@
 			);
 			mainGroup = D4AC1F0724A8151800C340F9;
 			packageReferences = (
-				D449838024AFA2B600303C4A /* XCRemoteSwiftPackageReference "SMPArticle-Package_C" */,
+				D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */,
 			);
 			productRefGroup = D4AC1F1124A8151800C340F9 /* Products */;
 			projectDirPath = "";
@@ -444,26 +429,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D449838024AFA2B600303C4A /* XCRemoteSwiftPackageReference "SMPArticle-Package_C" */ = {
+		D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:LittleGreenViper/SMPArticle-Package_C.git";
+			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_B.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D449838124AFA2B600303C4A /* Package-C */ = {
+		D449838A24AFAA5D00303C4A /* Package-BPrime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D449838024AFA2B600303C4A /* XCRemoteSwiftPackageReference "SMPArticle-Package_C" */;
-			productName = "Package-C";
+			package = D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
+			productName = "Package-BPrime";
 		};
-		D449838524AFA2D400303C4A /* Package-C */ = {
+		D449838C24AFAA7000303C4A /* Package-BPrime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D449838024AFA2B600303C4A /* XCRemoteSwiftPackageReference "SMPArticle-Package_C" */;
-			productName = "Package-C";
+			package = D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
+			productName = "Package-BPrime";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

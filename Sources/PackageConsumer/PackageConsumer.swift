@@ -21,11 +21,11 @@ Little Green Viper Software Development LLC: https://littlegreenviper.com
 */
 
 import Foundation
-import Package_C
+import Package_BPrime
 
 struct PackageConsumer {
     let text: String
-    init(text intext: String = "PackageConsumer, Version 3.0.0") {
-        text = intext + "\n" + Package_C(indent: 1).text
+    init(text intext: String = "PackageConsumer, Version 4.0.0") {
+        text = intext + "\n" + Package_BPrime(indent: 1).text
     }
 }
