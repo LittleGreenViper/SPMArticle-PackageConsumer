@@ -25,7 +25,7 @@ import Package_D
 
 struct PackageConsumer {
     let text: String
-    init(text intext: String = "PackageConsumer, Version 5.0.0") {
+    init(text intext: String = "PackageConsumer, Version 6.0.0") {
         text = intext + "\n" + Package_D(indent: 1).text
     }
 }
