@@ -9,6 +9,15 @@
           "revision": "87fa2662bf9d644b5b1936a253b485bfd0f26582",
           "version": "1.0.0"
         }
+      },
+      {
+        "package": "Package_B",
+        "repositoryURL": "git@github.com:LittleGreenViper/SPMArticle-Package_B.git",
+        "state": {
+          "branch": null,
+          "revision": "f1a83ec989fc5d615100fcfe015bb2fe3f92b3f8",
+          "version": "1.0.0"
+        }
       }
     ]
   },
