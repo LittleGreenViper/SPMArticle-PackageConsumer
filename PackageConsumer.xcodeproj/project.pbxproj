@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D449838B24AFAA5D00303C4A /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D449838A24AFAA5D00303C4A /* Package-BPrime */; };
-		D449838D24AFAA7000303C4A /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D449838C24AFAA7000303C4A /* Package-BPrime */; };
+		D407C7F924AFB27000EB2B28 /* Package-D in Frameworks */ = {isa = PBXBuildFile; productRef = D407C7F824AFB27000EB2B28 /* Package-D */; };
+		D407C7FA24AFB27000EB2B28 /* Package-D in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D407C7F824AFB27000EB2B28 /* Package-D */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D49AC57624AE94D900DE0843 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
 		D4C5D89824AF72C000164393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C5D89724AF72C000164393 /* main.swift */; };
@@ -22,6 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D407C7FA24AFB27000EB2B28 /* Package-D in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D449838B24AFAA5D00303C4A /* Package-BPrime in Frameworks */,
+				D407C7F924AFB27000EB2B28 /* Package-D in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D449838D24AFAA7000303C4A /* Package-BPrime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +135,6 @@
 			);
 			name = PackageConsumerTests;
 			packageProductDependencies = (
-				D449838C24AFAA7000303C4A /* Package-BPrime */,
 			);
 			productName = PackageConsumerTests;
 			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
@@ -155,7 +154,7 @@
 			);
 			name = PackageConsumer;
 			packageProductDependencies = (
-				D449838A24AFAA5D00303C4A /* Package-BPrime */,
+				D407C7F824AFB27000EB2B28 /* Package-D */,
 			);
 			productName = PackageConsumer;
 			productReference = D4AC1F1024A8151800C340F9 /* PackageConsumer */;
@@ -189,7 +188,7 @@
 			);
 			mainGroup = D4AC1F0724A8151800C340F9;
 			packageReferences = (
-				D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */,
+				D407C7F724AFB27000EB2B28 /* XCRemoteSwiftPackageReference "SPMArticle-Package_D" */,
 			);
 			productRefGroup = D4AC1F1124A8151800C340F9 /* Products */;
 			projectDirPath = "";
@@ -429,26 +428,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */ = {
+		D407C7F724AFB27000EB2B28 /* XCRemoteSwiftPackageReference "SPMArticle-Package_D" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_B.git";
+			repositoryURL = "git@github.com:LittleGreenViper/SPMArticle-Package_D.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D449838A24AFAA5D00303C4A /* Package-BPrime */ = {
+		D407C7F824AFB27000EB2B28 /* Package-D */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
-			productName = "Package-BPrime";
-		};
-		D449838C24AFAA7000303C4A /* Package-BPrime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D449838924AFAA5D00303C4A /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
-			productName = "Package-BPrime";
+			package = D407C7F724AFB27000EB2B28 /* XCRemoteSwiftPackageReference "SPMArticle-Package_D" */;
+			productName = "Package-D";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
