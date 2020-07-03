@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D42269A624AF813C003B510C /* Package-B in Frameworks */ = {isa = PBXBuildFile; productRef = D42269A524AF813C003B510C /* Package-B */; };
+		D456778624AF8825003F132F /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D456778524AF8825003F132F /* Package-BPrime */; };
+		D47D1F9724AF89980068C269 /* Package-BPrime in Frameworks */ = {isa = PBXBuildFile; productRef = D47D1F9624AF89980068C269 /* Package-BPrime */; };
 		D49AC57624AE94D900DE0843 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 		D49AC57E24AE978400DE0843 /* PackageConsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57D24AE978400DE0843 /* PackageConsumerTests.swift */; };
 		D4C5D89824AF72C000164393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C5D89724AF72C000164393 /* main.swift */; };
 		D4FDB7A024AF5D2700395BE0 /* PackageConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AC57524AE94D900DE0843 /* PackageConsumer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D47D1F9424AF897B0068C269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AC1F0824A8151800C340F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4AC1F0F24A8151800C340F9;
+			remoteInfo = PackageConsumer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D42269A224AF7F91003B510C /* Embed Frameworks */ = {
@@ -42,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42269A624AF813C003B510C /* Package-B in Frameworks */,
+				D456778624AF8825003F132F /* Package-BPrime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +61,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47D1F9724AF89980068C269 /* Package-BPrime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D456778424AF8825003F132F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D49AC57324AE94D900DE0843 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +116,7 @@
 				D49AC57324AE94D900DE0843 /* Sources */,
 				D49AC57C24AE978400DE0843 /* Tests */,
 				D4AC1F1124A8151800C340F9 /* Products */,
+				D456778424AF8825003F132F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,9 +142,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				D47D1F9524AF897B0068C269 /* PBXTargetDependency */,
 			);
 			name = PackageConsumerTests;
 			packageProductDependencies = (
+				D47D1F9624AF89980068C269 /* Package-BPrime */,
 			);
 			productName = PackageConsumerTests;
 			productReference = D49AC57B24AE978400DE0843 /* PackageConsumerTests.xctest */;
@@ -144,7 +166,7 @@
 			);
 			name = PackageConsumer;
 			packageProductDependencies = (
-				D42269A524AF813C003B510C /* Package-B */,
+				D456778524AF8825003F132F /* Package-BPrime */,
 			);
 			productName = PackageConsumer;
 			productReference = D4AC1F1024A8151800C340F9 /* PackageConsumer */;
@@ -210,6 +232,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D47D1F9524AF897B0068C269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4AC1F0F24A8151800C340F9 /* PackageConsumer */;
+			targetProxy = D47D1F9424AF897B0068C269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D49AC58124AE978400DE0843 /* Debug */ = {
@@ -429,10 +459,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D42269A524AF813C003B510C /* Package-B */ = {
+		D456778524AF8825003F132F /* Package-BPrime */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D42269A424AF813C003B510C /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
-			productName = "Package-B";
+			productName = "Package-BPrime";
+		};
+		D47D1F9624AF89980068C269 /* Package-BPrime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D42269A424AF813C003B510C /* XCRemoteSwiftPackageReference "SPMArticle-Package_B" */;
+			productName = "Package-BPrime";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
